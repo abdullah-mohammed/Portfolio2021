@@ -1,4 +1,3 @@
-import { IndeterminateCheckBox } from '@material-ui/icons';
 import {useState} from 'react'; 
 //style imports 
 import {
@@ -138,7 +137,7 @@ const AboutMeWindow = () => {
     const { activeTab } = state;
 
     return (
-        <Window style={{ width: 350}}>
+        <Window style={{ width: 350, margin: 10}}>
             <WindowHeader>About Me</WindowHeader>
             <WindowContent>
                 <Tabs value={activeTab} onChange={handleChange}>
