@@ -19,6 +19,7 @@ const getCurrTime = () => {
     let meridiem = (hours > 12) ? 'pm' : 'am'; 
 
     hours = hours % 12; 
+    hours = (hours === 0) ? 12 : hours; 
     minutes = (minutes < 10) ? '0' + minutes : minutes; 
 
     return hours + ':' + minutes + ' ' + meridiem; 
@@ -35,8 +36,8 @@ const TopToolbar = () => {
     }, []);
 
     return (
-        <AppBar>
-            <Toolbar style={{ justifyContent: 'space-between' }}>
+        <AppBar style = {{zIndex: 10}}>
+            <Toolbar style={{justifyContent: 'space-between' }}>
                 <div style={{ position: 'relative', display: 'inline-block' }}>
                     <Button
                         onClick={() => setOpen(!open)}

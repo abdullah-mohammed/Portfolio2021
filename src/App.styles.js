@@ -1,8 +1,8 @@
 import {
-    styled, 
     createGlobalStyle, 
     ThemeProvider
  }from 'styled-components';
+ import styled from 'styled-components';
  import { styleReset, List, ListItem, Divider } from 'react95';
  //font imports 
 import ms_sans_serif from "react95/dist/fonts/ms_sans_serif.woff2";
@@ -27,3 +27,10 @@ export const GlobalStyles = createGlobalStyle`
   }
   ${styleReset}
 `; 
+
+export const Wrapper = styled.div`
+  display: flex; 
+  flex-direction: column; 
+  padding-top: 70px;
+  align-items: center;
+`;
