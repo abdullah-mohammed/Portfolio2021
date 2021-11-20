@@ -13,10 +13,10 @@ import {
 import winLogo from '../images/winLogo.png';
 
 const getCurrTime = () => {
-    let dateObj = new Date; 
+    let dateObj = new Date(); 
     let hours = dateObj.getHours(); 
     let minutes = dateObj.getMinutes(); 
-    let meridiem = (hours > 12) ? 'pm' : 'am'; 
+    let meridiem = (hours >= 12) ? 'pm' : 'am'; 
 
     hours = hours % 12; 
     hours = (hours === 0) ? 12 : hours; 
