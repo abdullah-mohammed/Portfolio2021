@@ -1,6 +1,7 @@
 //components 
 import TopToolbar from './components/TopToolbar'; 
 import AboutMeSection from './components/AboutMeSection'; 
+import ResumeFile from './components/ResumeFile'; 
 
 //styles related
 import original from "react95/dist/themes/original";
@@ -17,6 +18,7 @@ const App = () => {
         <Wrapper>
           {/* animated component */}
           <AboutMeSection />
+          <ResumeFile />
         </Wrapper>
       </ThemeProvider>
     </div>
