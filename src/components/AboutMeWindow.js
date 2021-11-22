@@ -81,7 +81,7 @@ const linksTab = (linkSection) => {
                             alt = {item.header}
                             style={{ height: '20px', marginRight: 5 }}
                         />
-                        {(item.header === 'Resume.pdf') ? 
+                        {(item.header != 'Resume.pdf') ? 
                             <a 
                                 style={{ fontWeight: 'bold' }}
                                 href = {item.link}
