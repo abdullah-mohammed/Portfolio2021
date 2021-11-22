@@ -85,7 +85,8 @@ const linksTab = (linkSection) => {
                             <a 
                                 style={{ fontWeight: 'bold' }}
                                 href = {item.link}
-                                target= "_blank"
+                                target= '_blank'
+                                rel='noopener noreferrer'
                             >
                                 {item.header}
                             </a>

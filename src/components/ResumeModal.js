@@ -10,9 +10,8 @@ import {
     LoadingIndicator,
     Panel
 } from 'react95';
-import {ModalWrapper} from './ResumeModal.styles'; 
+import { ModalWrapper, PDFWrapper, ButtonsWrapper } from './ResumeModal.styles'; 
 //components 
-//import { Document, Page } from 'react-pdf';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 //files
 import pdfFile from '../downloadFiles/AbdullahMResume.pdf'; 
@@ -43,7 +42,7 @@ const ResumeModal = (props) => {
                     </Button>
                 </WindowHeader>
                 <WindowContent style = {{height: 'max-content'}}>
-                    <div style = {{overflowY: 'auto', maxHeight: '70vh', maxWidth: '90vw'}}>
+                    <PDFWrapper>
                         <Document
                             file = {pdfFile}
                             loading = {() => {
@@ -59,11 +58,11 @@ const ResumeModal = (props) => {
                         >
                             <Page pageNumber = {1} scale = {scale}/>
                         </Document>
-                    </div>
+                    </PDFWrapper>
                 </WindowContent>
                 {!loading && 
-                    <div style = {{display: 'flex', justifyContent: 'end', paddingRight: '15px'}}>
-                        <Button onClick = {() => {decScale()}} style = {{marginRight: '5px'}}>
+                    <ButtonsWrapper>
+                        <Button onClick = {() => { decScale()} } style = {{marginRight: '5px'}}>
                             <span role='img' aria-label='decrease'>
                                 ➖
                             </span>
@@ -73,7 +72,7 @@ const ResumeModal = (props) => {
                                 ➕
                             </span>
                         </Button>
-                    </div>
+                    </ButtonsWrapper>
                 }
             </Window>
         </ModalWrapper>
