@@ -19,8 +19,6 @@ const App = () => {
       <ThemeProvider theme = {original}>
         <TopToolbar />
         <Wrapper>
-          {/* animated component */}
-          {/* <AnimatedModel /> */}
           <VoxelDesktop /> 
           <AboutMeSection />
           <ResumeFile />
