@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'; 
+import {useState, useEffect, forwardRef} from 'react'; 
 
 import {
     AppBar,
@@ -25,7 +25,15 @@ const getCurrTime = () => {
     return hours + ':' + minutes + ' ' + meridiem; 
 }
 
-const TopToolbar = () => {
+const scrollToRef = (refVal) => {
+    refVal.current.scrollIntoView({behavior: "smooth"}); 
+}
+
+const TopToolbar = forwardRef((props, refs) => {
+    const refResume = refs.refRes; 
+    const refAbout = refs.refAbt; 
+    const refProject = refs.refProj; 
+
     const [open, setOpen] = useState(false);
     const [currTime, setTime] = useState(getCurrTime()); 
 
@@ -60,19 +68,19 @@ const TopToolbar = () => {
                     }}
                     onClick={() => setOpen(false)}
                     >
-                    <ListItem>
+                    <ListItem onClick = {() => {scrollToRef(refAbout)}}>
                         <span role='img' aria-label='👨‍💻'>
                         👨‍💻
                         </span>
                         About Me
                     </ListItem>
-                    <ListItem>
+                    <ListItem onClick = {() => {scrollToRef(refResume)}}>
                         <span role='img' aria-label='📄'>
                         📄
                         </span>
                         Resume
                     </ListItem>
-                    <ListItem>
+                    <ListItem onClick = {() => {scrollToRef(refProject)}}>
                         <span role='img' aria-label='🛠'>
                         🛠
                         </span>
@@ -90,7 +98,7 @@ const TopToolbar = () => {
             </Toolbar>
         </AppBar>
     );
-}
+})
 
 export default TopToolbar;
 
