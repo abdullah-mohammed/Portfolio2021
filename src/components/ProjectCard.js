@@ -41,7 +41,7 @@ const backContent = (observedItem) => {
 
 const cardTemplate = (observedItem, toggleBack, updateToggle) => {
     return (
-        <Window style = {{margin: 10}}>
+        <Window style = {{margin: 15}}>
             <WindowHeader style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <span>{observedItem.name}</span>
             </WindowHeader>

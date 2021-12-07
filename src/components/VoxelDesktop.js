@@ -124,9 +124,11 @@ const VoxelDesktop = () => {
 
 
     return (
+        <div style = {{maxHeight: 300, maxWidth: 400}}>
         <DesktopContainer ref = {refContainer}>
             {loading && <DesktopLoader />}
         </DesktopContainer>
+        </div>
     );
 }
 

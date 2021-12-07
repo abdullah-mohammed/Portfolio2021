@@ -11,4 +11,5 @@ export const CardWrappers = styled.div`
     flex-direction: row;
     flex-wrap: wrap; 
     justify-content: center;
+    max-width: 80vw;
 `; 

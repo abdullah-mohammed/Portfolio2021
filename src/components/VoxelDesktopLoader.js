@@ -3,8 +3,7 @@ import { forwardRef } from 'react';
 //have window loading animation here, update this 
 export const DesktopLoader = () => {
     return (
-        <div style = {{width: 300, height: 300}}>
-            Loading...
+        <div style = {{width: 400, height: 300}}>
         </div>
     )
 }
