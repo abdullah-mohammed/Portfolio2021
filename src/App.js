@@ -3,6 +3,8 @@ import TopToolbar from './components/TopToolbar';
 import AboutMeSection from './components/AboutMeSection'; 
 import ResumeFile from './components/ResumeFile'; 
 import ProjectsSection from './components/ProjectsSection'; 
+// import AnimatedModel from './components/AnimatedModel'; 
+import VoxelDesktop from './components/VoxelDesktop'; 
 
 //styles related
 import original from "react95/dist/themes/original";
@@ -18,6 +20,8 @@ const App = () => {
         <TopToolbar />
         <Wrapper>
           {/* animated component */}
+          {/* <AnimatedModel /> */}
+          <VoxelDesktop /> 
           <AboutMeSection />
           <ResumeFile />
           <ProjectsSection />
