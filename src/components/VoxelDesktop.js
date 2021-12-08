@@ -1,4 +1,3 @@
-import { ThreeDRotation } from '@material-ui/icons';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { render } from 'react-dom';
 import * as THREE from 'three'; 
