@@ -13,7 +13,13 @@ import masjidZakat from '../images/masjidZakat.png';
 import pieChart from '../images/pieChart.png'; 
 import ProjectCard from './ProjectCard';
 
+//github links 
+/*
+https://github.com/abdullah-mohammed/Fitness-Tracker
+https://github.com/abdullah-mohammed/Slice-the-Pie-React-App
 
+
+*/
 
 const ProjectsSection = () => {
     const projectInfo = [
@@ -30,7 +36,7 @@ const ProjectsSection = () => {
             description: "Developed an fitness tracker web app where users can log past fitness activities, "
             + "schedule future activities, and view trends in past activities through various graphs.",
             stack: "JavaScript, SQLite, Node.js, Express, Google Auth API",
-            link: "https://github.com/abdullah-mohammed/Fitness-Tracker",
+            link: "https://ActiveFitLog.ecs162instruct.repl.co",
             image: fitnessTracker
         }, 
         {
@@ -38,7 +44,7 @@ const ProjectsSection = () => {
             description: "Developed a mobile web app where users can parition university funding into various  "
             + "categories with a responsive pie chart and are shown actual funding allocations afterwards.", 
             stack: "React, JSX, D3, HTML, CSS",
-            link: "https://github.com/abdullah-mohammed/Slice-the-Pie-React-App",
+            link: "https://final-project-starter-abdullgomich.ecs162instruct.repl.co/",
             image: pieChart
         },
         {

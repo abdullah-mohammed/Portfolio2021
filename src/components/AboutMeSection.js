@@ -1,14 +1,18 @@
 import AboutMePicture from './AboutMePicture';
 import AboutMeWindow from './AboutMeWindow';
+import AboutMeText from './AboutMeText'; 
 //styles
-import { Wrapper } from './AboutMeSection.styles'; 
+import { Wrapper, ParentWrapper } from './AboutMeSection.styles'; 
 
 const AboutMeSection = () => {
     return (
-        <Wrapper>
-            <AboutMeWindow />
-            <AboutMePicture />
-        </Wrapper>
+        <ParentWrapper>
+            <AboutMeText />
+            <Wrapper>
+                <AboutMeWindow />
+                <AboutMePicture />
+            </Wrapper>
+        </ParentWrapper>
     );
 }
 
