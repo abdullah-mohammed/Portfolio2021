@@ -15,7 +15,7 @@ const frontContent = (observedItem) => {
             <img
                     src = {observedItem.image}
                     alt = {observedItem.name + 'image'}
-                    style = {{ height: 250, width: 250, maxWidth: 250}}
+                    style = {{ height: 250, width: 250, maxWidth: 250, cursor: 'pointer'}}
                     onClick = {() => { window.open(observedItem.link) }}
                     onTouchStart = {() => { window.open(observedItem.link) }}
             />

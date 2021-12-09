@@ -16,7 +16,7 @@ const ResumeFile = () => {
                 <img
                     src = {resumeClickable}
                     alt = 'resume clickable'
-                    style = {{ height: 150}}
+                    style = {{ height: 150, cursor: 'pointer'}}
                     onDoubleClick = {() => { setOpen(true) }}
                     onTouchStart = {() => { window.open(resumeLink) }}
                 />
